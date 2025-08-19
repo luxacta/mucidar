@@ -1,0 +1,168 @@
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  line-height: 0.5;
+}
+
+.form-control:focus {
+  border-color: var(--text-dark);
+}
+
+._ls-text-white li a,
+._ls-text-white li a:link,
+._ls-text-white li a:visited {
+  color: #636363 !important;
+  transition: color 0.3s ease, text-underline-offset 0.3s ease,
+    text-decoration-thickness 0.3s ease, text-decoration-color 0.3s ease !important;
+}
+
+._ls-text-white li a:hover,
+._ls-text-white li a.active {
+  color: #000 !important;
+  text-decoration: underline;
+  text-underline-offset: 0.8em;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(124, 57, 212);
+}
+
+/* Make carousel full height (100vh) */
+.carousel,
+.carousel-item {
+  height: calc(100vh - 120px);
+  min-height: 500px;
+}
+
+/* Ensure images cover the entire carousel slide */
+.carousel-item img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+
+/* Optional: Center captions vertically */
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.registration {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/theme2.jpg") no-repeat;
+  background-position: center left;
+}
+
+.btn-purple {
+  background: rgb(101, 34, 153);
+  padding: 0.35em 0.75em;
+  border: none;
+}
+
+.btn-purple:hover {
+  opacity: 0.75 !important;
+  transition: background 300ms linear;
+}
+
+.bg-purple {
+  background-color: #462681; /* Purple color */
+  color: white;
+}
+
+.w-md-50 {
+  width: 50%;
+}
+
+.section {
+  padding: 60px 0; /* Add padding to sections */
+}
+
+.card-img-top {
+  height: 200px; /* Fixed height for cards */
+  object-fit: cover; /* Ensures image covers the space */
+}
+
+.repository {
+  background-image: url("../images/theme2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  color: white;
+}
+
+.btn-3d {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background: #007bff; /* Primary color */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-3d-purple {
+  background-color: #6a0dad; /* Purple background */
+  color: white; /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 2px 0 #4b0082; /* Darker purple shadow for 3D effect */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-3d-purple:hover {
+  transform: translateY(-4px); /* Moves the button up on hover */
+  box-shadow: 0 3px 0 #4b0082; /* Increases shadow depth on hover */
+}
+
+.btn-3d-purple:active {
+  transform: translateY(2px); /* Moves the button down when clicked */
+  box-shadow: 0 2px 0 #4b0082; /* Reduces shadow on active state */
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none; /* Hidden by default */
+  background-color: #6a0dad; /* Purple color */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5%;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #4b0082; /* Darker purple on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Show button after scrolling */
+.show {
+  display: block !important;
+}
+
+@media (max-width: 960px) {
+  .w-md-50 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-md-50 {
+    width: 100%;
+    text-align: center !important;
+  }
+}
